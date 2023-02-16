@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HeroSection } from "./components";
+import { Hero, Services } from "./components";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || null);
@@ -42,7 +42,10 @@ const App = () => {
         {theme === "dark" ? "🌞" : "🌒"}
       </button>
       <div className="bg-white dark:bg-slate-900">
-        <HeroSection />
+        <div className="max-w-5xl mx-auto w-11/12">
+          <Hero />
+          <Services />
+        </div>
       </div>
     </>
   );
