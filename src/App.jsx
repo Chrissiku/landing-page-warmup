@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Hero, Services, Works, About, Footer } from "./components";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || null);
@@ -39,7 +40,7 @@ const App = () => {
         className="fixed z-10 md:right-5 md:top-5 right-2 top-2 
       bg-indigo-500 text-lg p-2 rounded-md"
       >
-        {theme === "dark" ? "🌞" : "🌒"}
+        {theme === "dark" ? <FaSun className="text-yellow-400" /> : <FaMoon />}
       </button>
       <div className="bg-white dark:bg-slate-900">
         <div className="max-w-5xl mx-auto w-11/12">
