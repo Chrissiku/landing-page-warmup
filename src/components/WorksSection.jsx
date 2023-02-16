@@ -14,6 +14,7 @@ const WorksSection = () => {
             imageUrl={work.imageUrl}
             title={work.title}
             tech={work.tech}
+            workUrl={work.workUrl}
           />
         ))}
       </div>

@@ -8,11 +8,11 @@ const Footer = () => {
       </a>
       <a
         href="mailto:chrissiku5@gmail.com"
-        className="font-regular text-sm md:text-mg hover:text-indigo-500"
+        className="text-sm md:text-mg hover:text-indigo-500"
       >
         chrissiku5@gmail.com
       </a>
-      <p className="text-xs font-regular mt-2 text-gray-500">
+      <p className="text-xs mt-2 text-gray-500">
         Built with <span className="text-red-600">❤</span> by Christian Siku |{" "}
         {new Date().getFullYear()} &copy; All right reserved
       </p>
