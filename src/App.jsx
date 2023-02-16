@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Hero, Services } from "./components";
+import { Hero, Services, Works } from "./components";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || null);
@@ -45,6 +45,7 @@ const App = () => {
         <div className="max-w-5xl mx-auto w-11/12">
           <Hero />
           <Services />
+          <Works />
         </div>
       </div>
     </>
